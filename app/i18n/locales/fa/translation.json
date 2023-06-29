@@ -1,11 +1,14 @@
 {
-  "h1": "یک مثال ساده",
-  "title": "Hauptseite",
-  "to-client-page": "Zur client seitigen Seite",
-  "to-second-page": "Zur zweiten Seite",
-  "welcome": "Willkommen ZU Next.js 13 <1>mit den neuen App-Verzeichnisfunktionen</1> und i18next",
+  "h1-1": "یک مثال ساده",
+  "title1": "صفحه سرور",
+  "to-client-page": "صفحه کلاینت",
+  "to-second-page": "  صفحه  ( سرور )",
+  "welcome": "خوش آمدید",
   "blog": {
-    "text": "Schau dir den entsprechenden <1>Blogeintrag</1> dieses Beispiels an.",
+    "text": "این دومین صفحه سرور است .",
     "link": "https://locize.com/blog/next-13-app-dir-i18n/"
-  }
+  },
+  "back-to-home": "برگشت به صفحه اصلی",
+  "h1-2": "این دومین صفحه برای سرور است ",
+  "title2": "صفحه سرور دوم"
 }

@@ -1,9 +1,12 @@
 {
-  "back-to-home": "Zurück zur Hauptseite",
+  "back-to-home": "برگشت به صفحه اصلی",
   "counter_one": "eines ausgewählt",
   "counter_other": "{{count}} ausgewählt",
   "counter_zero": "keines ausgewählt",
-  "h1": "Eine client Seite, um das client-seitige i18n zu demonstrieren",
-  "title": "Client Seite",
-  "to-second-client-page": "zur zweiten client Seite"
+  "h1-1": "صفحه کلاینت",
+  "title1": "هدر صفحه کلاینت ",
+  "to-second-client-page": "صفحه دوم کلاینت",
+  "back-to-home2": "برگشت به صفحه اصلی",
+  "h1-2": "صفحه دوم کلاینت ",
+  "title": "هدر صفحه دوم کلاینت"
 }

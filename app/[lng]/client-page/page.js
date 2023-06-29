@@ -13,7 +13,7 @@ export default function Page({ params: { lng } }) {
     <>
       <Navigationbar lng={lng} path="/client-page" />
       <main>
-        <Header heading={t("h1")} />
+        <Header heading={t("h1-1")} />
         <p>{t("counter", { count: counter })}</p>
         <div>
           <button onClick={() => setCounter(Math.max(0, counter - 1))}>
@@ -24,7 +24,7 @@ export default function Page({ params: { lng } }) {
           </button>
         </div>
         <Link href={`/${lng}/second-client-page`}>
-          {t("to-second-client-page")}
+          <button type="button"> {t("to-second-client-page")}</button>
         </Link>
         <Link href={`/${lng}`}>
           <button type="button">{t("back-to-home")}</button>

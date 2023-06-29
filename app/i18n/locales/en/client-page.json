@@ -3,7 +3,10 @@
   "counter_one": "one selected",
   "counter_other": "{{count}} selected",
   "counter_zero": "none selected",
-  "h1": "A client page, to demonstrate client side i18n",
-  "title": "Client page",
-  "to-second-client-page": "to second client page"
+  "h1-1": "A client page, to demonstrate client side i18n",
+  "title1": "Client page",
+  "to-second-client-page": "to second client page",
+  "back-to-home2": "Back to home",
+  "h1-2": "A second client page, to demonstrate client side i18n",
+  "title": "Second client page"
 }
