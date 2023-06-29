@@ -3,7 +3,7 @@ import { Trans } from "react-i18next/TransWithoutContext";
 import { languages, fallbackLng } from "../i18n/settings";
 import { useTranslation } from "../i18n";
 import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import { Navigationbar } from "./components/Navigationbar";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng);
@@ -34,7 +34,7 @@ export default async function Page({ params: { lng } }) {
           </Link>
         </div>
       </main>
-      <Footer lng={lng} />
+      <Navigationbar lng={lng} />
     </>
   );
 }
