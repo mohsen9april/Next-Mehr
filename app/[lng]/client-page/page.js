@@ -11,6 +11,7 @@ export default function Page({ params: { lng } }) {
   const [counter, setCounter] = useState(0);
   return (
     <>
+      <Navigationbar lng={lng} path="/client-page" />
       <main>
         <Header heading={t("h1")} />
         <p>{t("counter", { count: counter })}</p>
@@ -29,7 +30,6 @@ export default function Page({ params: { lng } }) {
           <button type="button">{t("back-to-home")}</button>
         </Link>
       </main>
-      <Navigationbar lng={lng} path="/client-page" />
     </>
   );
 }

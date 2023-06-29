@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Trans } from "react-i18next/TransWithoutContext";
 import { languages } from "../../../i18n/settings";
+import Style from "./Navigationbar.module.css";
 
 export const NavigationbarBase = ({ t, lng, path = "" }) => {
   return (
@@ -12,10 +13,14 @@ export const NavigationbarBase = ({ t, lng, path = "" }) => {
         .filter((l) => lng !== l)
         .map((l, index) => {
           return (
-            <span key={l}>
-              {index > 0 && " or "}
-              <Link href={`/${l}${path}`}>{l}</Link>
-            </span>
+            <button className={Style.button}>
+              <span key={l}>
+                {index > 0 && " or "}
+                <Link href={`/${l}${path}`} style={{ color: "white" }}>
+                  {l}
+                </Link>
+              </span>
+            </button>
           );
         })}
     </header>

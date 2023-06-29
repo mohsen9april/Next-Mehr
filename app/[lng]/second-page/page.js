@@ -12,13 +12,13 @@ export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "second-page");
   return (
     <>
+      <Navigationbar lng={lng} path="/second-page" />
       <main>
         <Header heading={t("h1")} />
         <Link href={`/${lng}`}>
           <button type="button">{t("back-to-home")}</button>
         </Link>
       </main>
-      <Navigationbar lng={lng} path="/second-page" />
     </>
   );
 }

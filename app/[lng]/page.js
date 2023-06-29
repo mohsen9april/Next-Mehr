@@ -16,6 +16,7 @@ export default async function Page({ params: { lng } }) {
 
   return (
     <>
+      <Navigationbar lng={lng} />
       <main>
         <Header heading={t("h1")} />
         <h2>
@@ -34,7 +35,6 @@ export default async function Page({ params: { lng } }) {
           </Link>
         </div>
       </main>
-      <Navigationbar lng={lng} />
     </>
   );
 }
