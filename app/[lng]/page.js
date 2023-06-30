@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Trans } from "react-i18next/TransWithoutContext";
 import { languages, fallbackLng } from "../i18n/settings";
 import { useTranslation } from "../i18n";
-import { Header } from "./components/Header";
 import { ServerLanguages } from "./components/Languages/server";
 
 export async function generateMetadata({ params: { lng } }) {
@@ -18,12 +17,11 @@ export default async function Page({ params: { lng } }) {
     <>
       <ServerLanguages lng={lng} />
       <main>
-        <Header heading={t("h1-1")} />
-        <h2>
+        {/* <h2>
           <Trans t={t} i18nKey="welcome">
             Welcome to Next.js v13 <small>appDir</small> and i18next
           </Trans>
-        </h2>
+        </h2> */}
 
         <hr style={{ marginTop: 20, width: "90%" }} />
         <div>

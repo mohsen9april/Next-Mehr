@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useTranslation } from "../../i18n";
-import { Header } from "../components/Header";
 import { ServerLanguages } from "../components/Languages/server";
 
 export async function generateMetadata({ params: { lng } }) {
@@ -14,7 +13,6 @@ export default async function Page({ params: { lng } }) {
     <>
       <ServerLanguages lng={lng} path="/second-page" />
       <main>
-        <Header heading={t("h1-2")} />
         <Link href={`/${lng}`}>
           <button type="button">{t("back-to-home")}</button>
         </Link>
