@@ -3,7 +3,7 @@ import { Trans } from "react-i18next/TransWithoutContext";
 import { languages, fallbackLng } from "../i18n/settings";
 import { useTranslation } from "../i18n";
 import { Header } from "./components/Header";
-import { ServerNavigationbar } from "./components/Navigationbar/server";
+import { ServerLanguages } from "./components/Languages/server";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng);
@@ -16,7 +16,7 @@ export default async function Page({ params: { lng } }) {
 
   return (
     <>
-      <ServerNavigationbar lng={lng} />
+      <ServerLanguages lng={lng} />
       <main>
         <Header heading={t("h1-1")} />
         <h2>

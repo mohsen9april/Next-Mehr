@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { useTranslation } from "../../i18n/client";
 import { Header } from "../components/Header";
-import { ClientNavigationbar } from "../components/Navigationbar/client";
+import { ClientLanguages } from "../components/Languages/client";
 
 export default function Page({ params: { lng } }) {
   const { t } = useTranslation(lng, "client-page");
   return (
     <>
-      <ClientNavigationbar lng={lng} path="/second-client-page" />
+      <ClientLanguages lng={lng} path="/second-client-page" />
       <main>
         <Header heading={t("h1-2")} />
         <Link href={`/${lng}`}>

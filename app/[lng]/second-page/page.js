@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "../../i18n";
 import { Header } from "../components/Header";
-import { ServerNavigationbar } from "../components/Navigationbar/server";
+import { ServerLanguages } from "../components/Languages/server";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "translation");
@@ -12,7 +12,7 @@ export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "translation");
   return (
     <>
-      <ServerNavigationbar lng={lng} path="/second-page" />
+      <ServerLanguages lng={lng} path="/second-page" />
       <main>
         <Header heading={t("h1-2")} />
         <Link href={`/${lng}`}>

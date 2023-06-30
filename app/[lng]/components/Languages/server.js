@@ -1,7 +1,7 @@
 import { useTranslation } from "../../../i18n";
-import { NavigationbarBase } from "./NavigationbarBase";
+import { NavigationbarBase } from "./LanguagesBase";
 
-export const ServerNavigationbar = async ({ lng, path }) => {
+export const ServerLanguages = async ({ lng, path }) => {
   const { t } = await useTranslation(lng, "footer");
   return <NavigationbarBase t={t} lng={lng} path={path} />;
 };

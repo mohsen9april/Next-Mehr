@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Trans } from "react-i18next/TransWithoutContext";
 import { languages } from "../../../i18n/settings";
-import Style from "./Navigationbar.module.css";
+import Style from "./LanguagesBase.module.css";
 
 export const NavigationbarBase = ({ t, lng, path = "" }) => {
   return (

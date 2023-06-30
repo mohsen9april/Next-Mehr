@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useTranslation } from "../../i18n/client";
 import { Header } from "../components/Header";
-import { ClientNavigationbar } from "../components/Navigationbar/client";
+import { ClientLanguages } from "../components/Languages/client";
 import { useState } from "react";
 
 export default function Page({ params: { lng } }) {
@@ -11,7 +11,7 @@ export default function Page({ params: { lng } }) {
   const [counter, setCounter] = useState(0);
   return (
     <>
-      <ClientNavigationbar lng={lng} path="/client-page" />
+      <ClientLanguages lng={lng} path="/client-page" />
       <main>
         <Header heading={t("h1-1")} />
         <p>{t("counter", { count: counter })}</p>
