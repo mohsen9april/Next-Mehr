@@ -12,6 +12,7 @@ export async function generateMetadata({ params: { lng } }) {
 export default async function Page({ params: { lng } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng;
   const { t } = await useTranslation(lng);
+  // const { t } = await useTranslation(lng, "translation");
 
   return (
     <>
@@ -30,6 +31,9 @@ export default async function Page({ params: { lng } }) {
           </Link>
           <Link href={`/${lng}/client-page`}>
             <button type="button">{t("to-client-page")}</button>
+          </Link>
+          <Link href={`/${lng}/aboutus`}>
+            <button type="button">{t("aboutusinnavbar")}</button>
           </Link>
         </div>
       </main>

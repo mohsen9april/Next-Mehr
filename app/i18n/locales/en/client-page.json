@@ -8,5 +8,9 @@
   "to-second-client-page": "to second client page",
   "back-to-home2": "Back to home",
   "h1-2": "A second client page, to demonstrate client side i18n",
-  "title": "Second client page"
+  "title": "Second client page",
+  "aboutustext" : "this is a text from about us page",
+  "home" : "Home",
+  "aboutus" : "About us",
+  "products" : "Products"
 }
